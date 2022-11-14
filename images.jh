@@ -1,0 +1,28 @@
+
+/**
+ * Images (images) entity.\n@author Ibrahim Mohamed.
+ */
+entity Images {
+  guid String required,
+  plate String ,
+  imageLp  ImageBlob,
+  imageThumb  ImageBlob,
+  anpr String ,
+  rfid String ,  
+  dataStatus String required,
+  gantry Long required,
+  lane Long required,
+  kph Long ,
+  ambush Long ,
+  direction Long ,
+  vehicle Long required,
+  issue String,
+  status String
+}
+
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         
